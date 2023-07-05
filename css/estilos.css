@@ -1,0 +1,109 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.image img {
+    height: auto;
+    max-width: 100%;
+    margin-left: 20%;
+    width: 50%; /* Ajusta el valor según tus preferencias */
+    max-height: 500px; /* Ajusta el valor según tus preferencias */
+}
+
+@media (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    .image img {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        width: 100%; /* La imagen ocupa el ancho completo del contenedor */
+        max-height: none; /* Elimina la altura máxima */
+    }
+}
+
+#title_register {
+    color: #000000;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+}
+
+.form {
+    flex: 1;
+    padding: 20px;
+    max-width: 500px;
+    background-color: #ffffff;
+    margin-right: 10%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form button {
+    padding: 8px 15px;
+    background-color: #1d0f63;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px; /* Ajusta el valor según tus preferencias */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+@media (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    .form button {
+        width: 100%; /* El botón ocupa el ancho completo del contenedor */
+    }
+}
+
+.form button:hover {
+    background-color: #45a049;
+}
+
+.form p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.checkbox-label {
+    font-size: 14px;
+}
